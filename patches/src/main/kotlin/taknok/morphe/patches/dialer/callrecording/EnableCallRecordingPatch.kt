@@ -1,0 +1,25 @@
+package app.morphe.patches.googlephone.callrecording
+
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
+
+/**
+ * Makes the manual recording action available when the recorder capability
+ * gate is the only rejected condition.
+ *
+ * Existing emergency, conference, CDMA, video, RTT, Fi, and missing-feature
+ * exits remain unchanged because they jump to the common false return before
+ * this insertion point.
+ */
+val enableCallRecordingPatch = bytecodePatch(
+    name = "Enable call recording",
+    description = "Enables the in-call recording action when the device recorder capability is unavailable.",
+    default = true,
+) {
+    execute {
+        CallRecordingAvailabilityFingerprint.let {
+            val exitIndex = it.instructionMatches[2].index
+            it.method.addInstruction(exitIndex, "const/4 v0, 0x1")
+        }
+    }
+}

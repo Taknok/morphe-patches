@@ -5,10 +5,11 @@
  * the method as `b`. Those names are intentionally not part of this
  * fingerprint.
  */
-package app.morphe.patches.googlephone.callrecording
+package taknok.patches.googlephone.callrecording
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.string
+import app.morphe.patcher.opcode
 import com.android.tools.smali.dexlib2.Opcode
 
 /**

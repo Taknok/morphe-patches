@@ -1,8 +1,8 @@
-package app.morphe.patches.googlephone.callrecording
+package taknok.patches.googlephone.callrecording
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.patch.bytecodePatch
-
+import taknok.patches.shared.Constants.COMPATIBILITY_DIALER
 /**
  * Makes the manual recording action available when the recorder capability
  * gate is the only rejected condition.
@@ -16,6 +16,7 @@ val enableCallRecordingPatch = bytecodePatch(
     description = "Enables the in-call recording action when the device recorder capability is unavailable.",
     default = true,
 ) {
+    compatibleWith(COMPATIBILITY_DIALER)
     execute {
         CallRecordingAvailabilityFingerprint.let {
             val exitIndex = it.instructionMatches[2].index

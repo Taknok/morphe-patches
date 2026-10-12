@@ -1,16 +1,14 @@
 # 👋🧩 Morphe Patches template
 
-Template repository for Morphe Patches.
+Taknok repository for Morphe Patches.
 
 ## ❓ About
 
 Patches for apps I like.
 
-<!-- TODO: Update this about section with a brief introduction/summary about this repo and what it offers. -->
-
 ### How to use these patches
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=xyz-user/xyz-patches
+Click here to add these patches to Morphe: https://morphe.software/add-source?github=Taknok/morphe-patches
 
 ## 🩹 Patches list
 
@@ -84,8 +82,15 @@ To develop and release your Patches using this template:
 - Patch the mpp file using [Morphe-Desktop](https://github.com/MorpheApp/morphe-desktop)
   like any other patch bundle.
 
+#### VS Code Dev Container
+
+Open the repository in VS Code and choose **Dev Containers: Reopen in Container**. The
+container includes Java 21 and the Android SDK needed to run `./gradlew buildAndroid`.
+If the build needs access to Morphe's private package registry, set `GITHUB_ACTOR` and
+`GITHUB_TOKEN` in your local environment before opening the container.
+
 See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation) for more information.
 
 ## 📜 License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+Taknok Patches are licensed under the [GNU General Public License v3.0](LICENSE)

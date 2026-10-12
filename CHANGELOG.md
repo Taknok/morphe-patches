@@ -1,3 +1,9 @@
+## [1.0.0-dev.2](https://github.com/Taknok/morphe-patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-10-12)
+
+### ✨ New Features
+
+* add recording annoucenment remover patch ([faf9072](https://github.com/Taknok/morphe-patches/commit/faf90727038fa44d70bc2d86bb6783d8d057b92e))
+
 ## 1.0.0-dev.1 (2026-10-12)
 
 ### 🐛 Bug Fixes

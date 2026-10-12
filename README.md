@@ -13,9 +13,9 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.1](https://github.com/Taknok/morphe-patches/releases/tag/v1.0.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
+> **[v1.0.0-dev.2](https://github.com/Taknok/morphe-patches/releases/tag/v1.0.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
 <details open>
-<summary>📦 Phone&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<summary>📦 Phone&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -25,6 +25,7 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Call recording announcements remover](#call-recording-announcements-remover) | Removes the announcements when starting or stopping a call recording. |  |
 | [Enable call recording](#enable-call-recording) | Enables the in-call recording action when the device recorder capability is unavailable. |  |
 
 </details>

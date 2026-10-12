@@ -1,7 +1,7 @@
 {
-  "created_at": "",
-  "description": "",
-  "download_url": "",
+  "created_at": "2026-10-12T20:30:01",
+  "description": "## 1.0.0-dev.1 (2026-10-12)\n\n### 🐛 Bug Fixes\n\n* add patch call recording enabler ([f675ef7](https://github.com/Taknok/morphe-patches/commit/f675ef79dbdd1ba21394472456969f16db32d9f8))\n* initial dev release ([741d128](https://github.com/Taknok/morphe-patches/commit/741d12894257ba5de6f761b624e98dbe997dd956))",
+  "download_url": "https://github.com/Taknok/morphe-patches/releases/download/v1.0.0-dev.1/patches-1.0.0-dev.1.mpp",
   "signature_download_url": "",
-  "version": ""
+  "version": "1.0.0-dev.1"
 }

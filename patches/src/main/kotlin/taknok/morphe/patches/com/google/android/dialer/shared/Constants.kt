@@ -1,4 +1,4 @@
-package taknok.patches.shared
+package taknok.patches.com.google.android.dialer.shared
 
 import app.morphe.patcher.patch.ApkFileType
 import app.morphe.patcher.patch.AppTarget

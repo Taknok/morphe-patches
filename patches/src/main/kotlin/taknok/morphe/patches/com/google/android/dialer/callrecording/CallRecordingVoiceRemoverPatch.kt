@@ -1,9 +1,9 @@
-package taknok.patches.googlephone.callrecording
+package taknok.patches.com.google.android.dialer.callrecording
 
 import app.morphe.patcher.patch.ResourcePatchContext
 import app.morphe.patcher.patch.resourcePatch
 import org.w3c.dom.Element
-import taknok.patches.shared.Constants.COMPATIBILITY_DIALER
+import taknok.patches.com.google.android.dialer.shared.Constants.COMPATIBILITY_DIALER
 import java.io.FileNotFoundException
 import java.nio.file.Files
 import java.util.logging.Logger

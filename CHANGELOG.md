@@ -1,3 +1,9 @@
+## [1.0.0-dev.4](https://github.com/Taknok/morphe-patches/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-10-14)
+
+### 🐛 Bug Fixes
+
+* rename package ([a9a6e92](https://github.com/Taknok/morphe-patches/commit/a9a6e926ceccce65bb45297982ae2f7dbd3c39dd))
+
 ## [1.0.0-dev.3](https://github.com/Taknok/morphe-patches/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-10-14)
 
 ### 🐛 Bug Fixes

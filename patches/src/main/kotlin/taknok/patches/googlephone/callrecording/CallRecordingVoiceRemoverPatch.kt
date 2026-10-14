@@ -9,7 +9,6 @@ import java.nio.file.Files
 import java.util.logging.Logger
 import kotlin.io.path.isDirectory
 import kotlin.io.path.name
-import kotlin.io.path.relativeTo
 
 @Suppress("unused")
 val callRecordingVoiceRemoverPatch = resourcePatch(
@@ -68,16 +67,15 @@ private fun editStringAllResources(
 ) {
     editStringResources(context, "res/values/strings.xml", stringName, stringValue, operation)
 
-    val apkFiles = context["."].toPath()
-    Files.walk(apkFiles.resolve("res"), 1).use { paths ->
+    val resources = context["res"].toPath()
+    Files.walk(resources, 1).use { paths ->
         paths
             .filter { it.isDirectory() && it.name.startsWith("values-") }
             .filter { Files.exists(it.resolve("strings.xml")) }
             .forEach { dir ->
-                val relativePath = dir.relativeTo(apkFiles)
                 editStringResources(
                     context,
-                    "$relativePath/strings.xml",
+                    "res/${dir.name}/strings.xml",
                     stringName,
                     stringValue,
                     operation,
